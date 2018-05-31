@@ -11,11 +11,13 @@ Rails.application.routes.draw do
   namespace :admin do
     resources :stats, only: [:index]
   end
+  #gives us admin_stats_path helper
 
   # scope '/admin', module: 'admin' do
   #   resources :stats, only: [:index]
   # end
-  # 
+  # gives us stats_path URL helper
+  #
   # scope '/admin' do
   #   resources :stats, only: [:index]
   # end
